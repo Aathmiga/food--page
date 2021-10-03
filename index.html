@@ -1,0 +1,434 @@
+<html>
+    <head>
+        <meta name="view" content="with=device-width,initial-scale=1.0">
+        <title>Foodies Corner</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">  
+    <style>
+        *{
+            margin:0;
+        padding:0;
+    
+        }
+        .header{
+            height:65%;
+            width:100%;
+            background-image: url(assets/images/tem.png);
+            background-size: cover;
+            position: relative;
+            background-position: center;
+        }
+        .nav{
+            display:flex;
+            padding:2% 80%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar{
+            list-style:none ;
+            text-align:center;
+        }
+        .navbar ul li {
+            display:inline-block;
+            padding:20px 20px;
+            position:relative;
+        }
+        .navbar ul li a{
+            color:beige;
+            font-size: 20px;
+            text-decoration: wavy;
+        }
+        .navbar ul li a:hover{
+            color: brown;
+        }
+        .tit{
+            width:40%;
+            color: rgb(123, 209, 12);
+            position:absolute;
+            top:58%;
+            left:25%;
+            
+        }
+        .tit h1{
+            font-family: 'Ephesis', cursive;
+            font-weight: 1000;
+            font-size: 49px;
+        }
+        .tit p{
+            color:beige;
+            position: absolute;
+            top:75%;
+            left:14%;
+        }
+        .menu {
+            padding-top: 30px;
+            padding-left: 20px;
+            font-family: 'Quicksand', sans-serif;
+            color:blue;
+
+
+        }
+        .mennu{
+            padding-top: 30px;
+            padding-bottom:20px;
+            padding-left: 40px;
+            padding-right:40px;
+            display:flex;
+            justify-content: space-between;
+        }
+        .order{
+            height:max-content;
+            
+                clip-path: circle(35%);
+        }
+        .order img:hover{
+            transform:scale(1.15);
+
+        }
+        .name{
+            font-family: 'Quicksand', sans-serif;
+            display:flex;
+            justify-content: space-between;
+            margin-right: 90px;
+            margin-left: 80px;
+            padding-top:0px ;
+            font-size: 15px;
+        }
+        .orders{
+            font-family: 'Quicksand', sans-serif;
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .mi{ padding-top: 30px;
+            padding-left: 20px;
+            font-family: 'Quicksand', sans-serif;
+            color:blue;
+
+
+        }
+        .available{
+            grid-template-columns:repeat(3,1fr);
+            padding:30px 20px;
+            grid-column-gap: 20px;
+             grid-row-gap: 30px;
+  }
+  .available button:hover{
+    transform:scale(1.01);
+    background-color:darkgreen;
+
+  }
+  .available img:hover{
+    transform:scale(1.01);
+
+  }
+  .available h2{
+    font-family: 'Quicksand', sans-serif;
+        color:lightseagreen;
+            text-align: center;
+            padding-top: 4px;
+            padding-bottom: 7px;
+  }
+  .available p{
+      text-align: center;
+      padding-bottom: 7px;
+      padding-top: 4px;
+  }
+  .available button{
+      text-align:center;
+    font-family: 'Quicksand', sans-serif;
+    background-color:dodgerblue;
+    border:none;
+    color:white;
+    padding:7px 120px;
+    display: inline-block;
+    font-size: 14px;
+  }
+    .deeee h2{
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color:blue;          
+
+
+  }
+
+  
+  .avai{
+            font-family: 'Quicksand', sans-serif;
+            display:flex;
+            justify-content: space-between;
+  }
+  .aval{
+            grid-template-columns:repeat(4,1fr);
+            padding:30px 20px;
+            grid-column-gap: 20px;
+             grid-row-gap: 30px;
+  }
+  .aval h2{
+    font-family: 'Quicksand', sans-serif;
+            color:lightseagreen;
+            text-align: center;
+            padding-top: 4px;
+            padding-bottom: 7px;
+            
+  }
+  .aval p{
+      text-align: center;
+      padding-bottom: 7px;
+      padding-top: 4px;
+  }
+  .aval button{
+    text-align:center;
+    font-family: 'Quicksand', sans-serif;
+    background-color:dodgerblue;
+    border:none;
+    color:white;
+    padding:7px 120px;
+
+    font-size: 14px;
+  }
+  .aval img:hover{
+    transform:scale(1.01);
+
+  }
+  .aval button:hover{
+    transform:scale(1.01);
+background-color: darkgreen;
+  }
+  .forms{
+      
+      left:15%;
+right:90%;
+
+padding-bottom: 30px;
+position: absolute;
+
+  }
+  .input-field{
+      width:400px;
+      height:40px;
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      padding-right: 170px;
+      border-radius: 14px;
+      
+    
+  }
+  .contact h2{
+    padding-top: 45px;
+    padding-left: 235px;
+    font-family: 'Quicksand', sans-serif;
+    color:blue;      
+            
+  }
+  .address h2{
+
+padding-left:999px;
+font-family: 'Quicksand', sans-serif;
+color:blue; 
+
+
+  }
+  .address pre{
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 950px;
+    
+  }
+  .conclusion span{
+    color:dodgerblue;
+    text-align: center;
+
+  }
+  .conclusion p{
+    text-align: center;
+    padding-top: 20px;
+
+  }
+        
+    
+    </style>
+    </head>
+    <body>
+<section class="header">
+<nav>
+    <div class="navbar">
+<ul>
+    <li><a href="">Foods</a></li>
+    <li><a href="">Restaurents</a></li>
+    <li><a href="">Offers</a></li>
+    <li><a href="">Contacts</a></li>
+
+</ul>
+    </div>
+</nav>
+<div class="tit">
+    <h1>Foodies Corner</h1>
+    <p>Get more tastier</p>
+</div>
+</section>
+<section class="menu"><div class="deal">
+    <h2>Our deals</h2>
+    </div></section>
+    <section class="mennu">
+    <div class="order"> 
+        <img src="assets/images/break.jpg" alt="Break" style="width:150px">
+        </div>
+    <div class="order">
+        <img src="assets/images/biryani.jpeg" alt="Biryani" style="width:150px">
+    </div>
+    <div class="order">
+        <img src="assets/images/burger.jpg" alt="Burger" style="width:150px">
+    </div>
+    <div class="order">
+        <img src="assets/images/chicken.jpg" alt="Chicken" style="width:150px">
+    </div>
+    <div class="order">
+        <img src="assets/images/dinner.jpg" alt="Dinner" style="width:150px">
+    </div>
+    <div class="order">
+        <img src="assets/images/chineese.jpg" alt="Chineese" style="width:150px">
+    </div>
+    <div class="order">
+        <img src="assets/images/pizza.jpg" alt="Pizza" style="width:150px">
+    </div>
+
+</section>
+<section class="name">
+    <div class="nam">
+        <h3>Omlet</h3>
+    </div>
+    <div class="nam">
+        <h3>Biryani</h3>
+    </div>
+    <div class="nam">
+        <h3>Burger</h3>
+    </div>
+    <div class="nam">
+        <h3>Chicken</h3>
+    </div>
+    <div class="nam">
+        <h3>Veggies</h3>
+    </div>
+    <div class="nam">
+        <h3>Noodles</h3>
+    </div>
+    <div class="nam">
+        <h3>Pizza</h3>
+    </div>
+</section>
+<section class="mi">
+    <div class="ava">
+        <h2>Available orders</h2>
+    </div>
+</section>
+
+</section>
+<section class="orders">
+    <div class="available">
+        <img src="assets/images/full.jpg" width="300" height="215">
+        <h2>Dandoori</h2>
+        <p>Rs.350</p>
+        <button>Buy now</button>
+    </div>
+    <div class="available">
+        <img src="assets/images/indian.jpeg" width="300" height="215">
+        <h2>Lunch</h2>
+        <p>Rs.300</p>
+        <button>Buy now</button>
+    </div>
+    <div class="available">
+        <img src="assets/images/tik.jpg" width="300" height="215">
+        <h2>Panner tikka</h2>
+        <p>Rs.250</p>
+        <button>Buy now</button>
+    </div>
+
+    <div class="available">
+        <img src="assets/images/indian1.jpeg" width="300" height="215">
+        <h2>Break Fast</h2>
+        <p>Rs.200</p>
+        <button>Buy now</button>
+    </div>
+    
+    </section>
+    <section class="deeee">
+        <div class="deees">
+            <h2>Desserts and Drinks</h2>
+        </div>
+
+    </section>
+    <section class="avai">
+    <div class="aval">
+        <img src="assets/images/dee.jpg" width="300" height="215">
+        <h2>Chocolate mousee</h2>
+        <p>Rs.150</p>
+        <button>Buy now</button>
+
+    </div>
+    <div class="aval">
+        <img src="assets/images/de.jpg" width="300" height="215">
+        <h2>Rasberry</h2>
+        <p>Rs.130</p>
+        <button>Buy now</button>
+
+    </div>
+    <div class="aval">
+        <img src="assets/images/cake.jpg" width="300" height="215">
+        <h2>Cake</h2>
+        <p>Rs.90</p>
+        <button>Buy now</button>
+
+    </div>
+    <div class="aval">
+        <img src="assets/images/juice.jpg" width="300" height="215">
+        <h2>Juice</h2>
+        <p>Rs.70</p>        <button>Buy now</button>
+
+    </div>
+</div>
+    
+</section> 
+<section class="final">
+    <div class="contact">
+        <h2>Contact</h2>
+    </div>
+    
+
+    <div class=forms>
+<form>
+    <input type="name" class="input-field">
+    <input type="moblie number" class="input-field">
+    <textarea type="address" class="input-field"></textarea>
+
+</form>
+    </div>
+    <div class="address">
+        <h2>Address</h2>
+        <pre>
+            23/2 Near KSR college,
+            Kalvi nagar,
+            Tiruchengode-637215.
+        </pre>
+
+    </div>
+</section>
+<section class="con">
+    <div class="conclusion">
+        <p>Designed and developed by <span>Aathmiga</span></p>
+    </div>
+</section>
+
+    </body>
+</html>
